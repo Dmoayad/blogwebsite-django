@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+{% block title %}
+ BlogWebsite
+{% endblock %}
+{% block content %}
+ <h1>Welcome to the Blog Website</h1>
+    <ul>
+        <li><a href="{% url 'blogs' %}">View Blogs</a></li>
+        <li><a href="{% url 'users' %}">List of Users</a></li>
+        <li><a href="{% url 'categories' %}">Categories</a></li>
+        <li><a href="{% url 'comments' %}">Comments</a></li>
+    </ul>
+{% endblock %}
